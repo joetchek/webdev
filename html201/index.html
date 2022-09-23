@@ -7,7 +7,11 @@
 <body>
     <h1 id="top">Welcome to HTML 201</h1>
     <a href="#bottom">Scroll to bottom of page</a>
-
+    <div>
+        <a href="#video">
+            <button>Skip to video</button>
+        </a>
+    </div>
     <p>
         <span style="text-decoration: underline;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>. Ipsa odit consequatur vero facilis labore officia natus explicabo repellat laborum. Recusandae odit repellendus impedit enim error, iusto distinctio doloribus eius nihil?
     </p>
@@ -46,12 +50,82 @@
         </tr>
     </table>
 
-    <div style="padding: 40px; color: white; background-color: black;">
+    <style>
+        .className{
+            padding: 40px;
+            color: white;
+            background-color: black;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        #testId {
+            border: 15px solid red;
+        }
+
+    </style>
+
+    <div class="className uppercase">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eligendi sapiente voluptas expedita necessitatibus dolorem, amet voluptatem numquam facilis, nihil similique esse! Qui alias recusandae doloremque assumenda adipisci aspernatur consectetur.
+    </div>
+    <div class="className">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eligendi sapiente voluptas expedita necessitatibus dolorem, amet voluptatem numquam facilis, nihil similique esse! Qui alias recusandae doloremque assumenda adipisci aspernatur consectetur.
+    </div>
+    <div id="testId">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi assumenda, cumque eius est, nihil magnam quis facilis voluptatibus ipsam delectus sapiente vero, impedit voluptatem sit tenetur! Quibusdam saepe at nobis!
+    </div>
+
+    <h3>Formatting code</h3>
+
+    <!-- whitespace matters in pre tags -->
+    <!-- entity is for formatting key characters (&x;) -->
+    <pre>
+        Some stuff here &lt;b&gt;Bold text here&lt;/b&gt;
+        Second line here
+    </pre>
+
+    <!-- code is an inline formatter -->
+    <p>
+        <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</code> Non impedit ex dicta ratione voluptatem corporis voluptas error, similique illum laboriosam beatae, delectus explicabo dolores ipsa laudantium iusto? Fugit, sit asperiores.
+    </p>
+
+    <h3>Forms</h3>
+
+    <!-- <form method="GET" action="images/index.html">
+        <input type="text" name="" id="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Submit this form</button>
+    </form> -->
+    <form action="" method="get">
+        <div>
+            <input required name="email" type="email" value="Hello World" placeholder="Enter your password">
+        </div>
+        <div>
+            <textarea requried name="address" cols="50" rows="5" placeholder="Placeholder">Text in here</textarea>
+        </div>
+        <div>        
+            <button type="submit">Click me!</button>
+        </div>
+        <div>
+            <select name="selected_option">
+                <option value="" disabled="disabled">Disabled</option>
+                <option value="Value1">This is value 1</option>
+                <option value="Value2">This is value 2</option>
+                <option value="Value3">This is value 3</option>
+                <option value="default" selected="selected">Selected by default</option>
+            </select>
+        </div>
+    </form>
+
+    <h3>Embeddding</h3>
+
+    <div id="video">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/EQmIBHObtCs" title="Mick Gordon  The Only Thing They Fear Is You  DOOM Eternal OST High Quality" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div id="bottom">
         <a href="#top">Back to top</a>
+        &copy;2022
     </div>
 </body>
 </html>
