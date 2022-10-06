@@ -11,4 +11,5 @@ Day 5 - 9-26-22 - Finished Beginner CSS and did part of project and started Inte
 Day 6 - 9-27-22 - Continued with Intermediate CSS. Will finish and begin project tomorrow\
 Day 7 - 9-28-22 - Finished Intermediate CSS and worked on project. Will finish project tomorrow\
 Day 8 - 9-30-22 - Did CSS 301 Repsonsive Web Design and Started JS 101\
-Day 9 - 10-3-22 - Finished JS 101 and did project for that module
+Day 9 - 10-3-22 - Finished JS 101 and did project for that module\
+Day 10 - 10-5-22/10-6-22 - Started JS 201. Split over two days due to personal arrangements
