@@ -72,3 +72,69 @@ catch (error) {
 finally {
     //Do something in here
 }
+
+//this keyword in an object
+const person2 = {
+    'name': "Joe",
+    speak() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+person2.speak();
+
+// example of this in a function but it doesn't seem to work
+// function counter() {
+//     if (this.total === undefined){
+//         this.total = 1;
+//     }
+//     else {
+//         this.total++;
+//     }
+
+//     console.log("Running counter. Total is: ", this.total);
+// }
+
+// for (let i = 0; i < 10; i++){
+//     counter();
+// }
+
+//arrow function
+const hello = () => {
+    console.log("Hello!");
+}
+//return function from one line
+const hello2 = () => "Hello";
+console.log(hello2());
+
+//Javascript classes
+class MyClass {
+    setName(name){
+        this.name = name;
+    }
+    speak() {
+        if(this.name === undefined){
+            this.name = "Default";
+        }
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+const thing = new MyClass();
+//thing.setName("Joe");
+thing.speak();
+
+//Javascript constructor 
+class Person {
+    constructor(name){
+        this.name = name;
+    }
+
+    greeting() {
+        console.log(`Hello to ${this.name}`)
+    }
+}
+
+const person3 = new Person("Dave");
+person3.greeting();
+
