@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282727;
+    padding-top: 150px;
+}
+
+@media (min-width: 992px)
+{
+    body {
+        padding-top: 65px;
+    }
+}

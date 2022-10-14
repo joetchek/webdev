@@ -15,4 +15,5 @@ Day 9 - 10-3-22 - Finished JS 101 and did project for that module\
 Day 10 - 10-5-22/10-6-22 - Started JS 201. Split over two days due to personal arrangements\
 Day 11 - 10-7-22 - Finished JS 201. Started project. Will finish tomorrow\
 Day 12 - 10-10-22 - Finished project the other night, Started with Bootstrap 101/Watched some YouTube videos\
-Day 13 - 10-12-22 - Learned the Bootstrap utilities and researched some on my own
+Day 13 - 10-12-22 - Learned the Bootstrap utilities and researched some on my own\
+Day 14 - 10-13-22 - Finished Bootstrap 101 and started the final project. Will finish project tomorrow
