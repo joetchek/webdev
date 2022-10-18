@@ -17,4 +17,5 @@ Day 11 - 10-7-22 - Finished JS 201. Started project. Will finish tomorrow\
 Day 12 - 10-10-22 - Finished project the other night, Started with Bootstrap 101/Watched some YouTube videos\
 Day 13 - 10-12-22 - Learned the Bootstrap utilities and researched some on my own\
 Day 14 - 10-13-22 - Finished Bootstrap 101 and started the final project. Will finish project tomorrow\
-Day 15 - 10-15-22 - Finished Bootstrap project and began jQuery 101
+Day 15 - 10-15-22 - Finished Bootstrap project and began jQuery 101\
+Day 16 - 10-17-22 - Continued with jQuery 101 and learned about event listeners

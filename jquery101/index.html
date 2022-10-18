@@ -5,19 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQUERY 101</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 50px auto;
+        }
+
+    </style>
 </head>
 <body>
     
-    <h1 class="classname">
+    <!-- <h1 class="classname">
         Hello World
     </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint reiciendis voluptatem fuga hic ipsam labore quam, numquam voluptate nihil debitis, aliquam consequatur laudantium culpa praesentium rerum ex minima perspiciatis?
+    </p>
 
+    <input type="text" value="Hello World">
+
+    <h1 class="append">Some text in here</h1>
+
+    <div id="target">
+        Add HTML before and after this
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sapiente optio, pariatur fugiat, eaque aliquid voluptate, in voluptatum veniam reprehenderit nisi repellat! Quis quo tenetur nam molestias officia perspiciatis sunt.
+        </p>
+        <p class="middle-child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio eaque suscipit pariatur, incidunt numquam modi repudiandae quidem dolorum ab similique, rerum veritatis exercitationem tempore corporis ipsa dignissimos tempora voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam veritatis esse modi enim dolores. Perspiciatis blanditiis id deleniti rem, distinctio fugit quod. Animi exercitationem et labore, expedita culpa iusto laudantium!
+        </p>
+    </div> -->
+
+    <!-- <div>
+        <strong>Bold</strong>
+        <em>Italic</em>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iusto quos temporibus nesciunt fugit officia quisquam tempora expedita odio, ullam a architecto, numquam adipisci. Fugit temporibus ducimus recusandae laudantium a.</p>
+    </div> -->
+
+    <!-- <button>Test</button> -->
+
+    <!-- <div class="box"></div> -->
+
+    <!-- <input type="text" class="select-me" value="Focus on me">  -->
+
+    <!-- <textarea name="mytextarea" id="" cols="30" rows="10"></textarea> -->
+
+    <!-- <form>
+        <input type="text" name="name" id="" placeholder="Your name here">
+        <button type="submit">Submit this form</button>
+    </form> -->
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            console.log("jQuery is loaded");
-            $("h1.classname").text("This was changed via jQuery")
+            // console.log("jQuery is loaded");
+            // $("h1.classname").text("This was changed via jQuery");
+            // $("p").html("<strong>Bolded and replaced</strong>");
+
+            // const value = $("input").val();
+            // console.log(value)
+
+            // $("h1.append").append("<strong>This is bold</strong>");
+            // $("h1.append").prepend("<strong>This is bold</strong>");
+
+            // $("div#target")
+            //     .before("<h3>This is a title</h3>")
+            //     .after("<p>This is a paragraph</p>");
+
+            // $("div p.middle-child").remove();
+
+            // $("div").empty().html("Hello World");
+
+            //Three different ways of handling click events - from least dynamic to most dynamic
+            // $("button").click(function() {
+            //     console.log("clicked");
+            // });
+            // $("button").on("click", function() {
+            //     console.log("This is clickable");
+            // });
+            // $(document).on("click", "button", function() {
+            //     console.log("This is clickable");
+            // });
+
+            //hover events - tend to stick to css
+            // $(".box")
+            //     .on("mouseenter", function() {
+            //         console.log("Hovering over box");
+            //     })
+            //     .on("mouseleave", function() {
+            //         console.log("Leaving box area");
+            //     });
+
+            //keyup events - when type in form
+            // $(".select-me").on("keyup", function() {
+            //     console.log("You pressed a key");
+            // });
+            //dont do this
+            // $(".select-me").on("keyup", function() {
+            //     const $input = $(".select-me");
+            //     console.log($input.val());
+            // });
+            //do this - use $(this) selector - more performant
+            // $(".select-me").on("keyup", function() {
+            //     console.log($(this).val());
+            // });
+
+            //focus - clicking into a form - also selecting based on attributes
+            // $("[name='mytextarea']").on("focus", function() {
+            //     console.log("You focused into this textarea");
+            // });
+
+            //blur - opposite of focus - clicking off input area
+            // $("input").on("blur", function() {
+            //     console.log("Leaving box");
+            // });
+
+            //on form submission
+            $("form").on("submit", function(event) {
+                event.preventDefault();
+                console.log("Form was not submitted")
+            });
         });
 
 
