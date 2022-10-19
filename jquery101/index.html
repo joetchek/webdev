@@ -10,7 +10,10 @@
             width: 200px;
             height: 200px;
             background-color: black;
-            margin: 50px auto;
+        }
+
+        .blue {
+            background-color: blue;
         }
 
     </style>
@@ -52,7 +55,10 @@
 
     <!-- <button>Test</button> -->
 
-    <!-- <div class="box"></div> -->
+    <!-- <button id="clickme">Hide Element</button> -->
+    <!-- <button class="toggle">Toggle blue</button> -->
+    <!-- <button>Click me</button>
+    <div class="box"></div>  -->
 
     <!-- <input type="text" class="select-me" value="Focus on me">  -->
 
@@ -62,6 +68,14 @@
         <input type="text" name="name" id="" placeholder="Your name here">
         <button type="submit">Submit this form</button>
     </form> -->
+
+    <!-- <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul> -->
+
+    <!-- <input type="text" name="" id=""> -->
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     <script>
@@ -129,10 +143,95 @@
             // });
 
             //on form submission
-            $("form").on("submit", function(event) {
-                event.preventDefault();
-                console.log("Form was not submitted")
-            });
+            // $("form").on("submit", function(event) {
+            //     event.preventDefault();
+            //     console.log("Form was not submitted")
+            // });
+
+            // //hiding an element when you click a button
+            // $("#clickme").on("click", function(e) {
+            //     e.preventDefault();
+            //     $(".box").hide();
+            // })
+
+            // //showing an element when you click a button
+            // $("#clickme").on("click", function(e) {
+            //     e.preventDefault();
+            //     $(".box").show();
+            // })
+            
+            //adding a class to an element
+            // $(".box").addClass("blue");
+
+            //removing a class from an element
+            // $(".box").removeClass("blue");
+
+            //toggling a class on and off
+            // $(".toggle").on("click", () => {
+            //     $(".box").toggleClass("blue");
+            // });
+
+            //changing the css by chaining or by objects - objects use camel case
+            // $(".box")
+            //     // .css("background-color", "orange")
+            //     // .css("border", "10px solid black")
+            //     // .css("border-radius", "50%");
+            //     .css({
+            //         backgroundColor: "yellow",
+            //         border: "10px solid blue"
+            //     })
+            
+            //fade out function, opposite is fadeIn
+            // $(".box").fadeOut(4500);
+
+            //toggling fade with a button
+            // $("button").on("click", function() {
+            //     $(".box").fadeToggle();
+            // });
+
+            //toggling display with button
+            // $("button").on("click", function() {
+            //     $(".box").toggle();
+            // });
+            
+            //toggling a element with slide animation
+            // $("button").on("click", function() {
+            //     $(".box").slideToggle();
+            // });
+
+            //animation - animate function takes an object of css to animate to
+            // $("button").on("click", function() {
+            //     $(".box").animate({
+            //         opacity: 0.5,
+            //         width: "500px"
+            //     }, 4000)
+            // });
+
+            //grabbing width characteristics - can do this with height as well
+            // console.log($(".box").width());
+
+            //do something on window resize
+            // $(window).on("resize", function() {
+            //     console.log($(window).width())
+            //     if($(window).width() <= 400){
+            //         $("body").css("background-color", "blue");
+            //     }
+            //     else {
+            //         $("body").css("background-color", "white");
+            //     }
+            // })
+
+            //looping over a set of elements with each
+            // $("li").each(function(index, element) {
+            //     $(element).text(`${index}, new item here`);
+            // });
+
+            // //getting an attribute of an element
+            // console.log($("input").attr("type"));
+            
+            // //changing the attr
+            // $("input").attr("type", "password");
+
         });
 
 
