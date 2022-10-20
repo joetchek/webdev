@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Generate!</button>
+    <div class="data"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("button").on("click", function(e) {
+            e.preventDefault();
+            $(".data").empty();
+
+            const rand = Math.ceil(Math.random() * 905);
+            const url = `https://pokeapi.co/api/v2/pokemon/${rand}`
+            $.get(url, function(data) {
+                const name = data['name'];
+                const height = data['height'];
+                const id = data['id'];
+
+                const nameElem = document.createElement("div");
+                const heightElem = document.createElement("div");
+                const idElem = document.createElement("div");
+
+                $(nameElem).text(name);
+                $(".data").append(nameElem);
+
+                $(heightElem).text(height);
+                $(".data").append(heightElem);
+
+                $(idElem).text(id);
+                $(".data").append(id);
+
+            })
+        })
+        })
+        
+
+
+
+    </script>
+</body>
+</html>
