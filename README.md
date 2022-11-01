@@ -22,3 +22,4 @@ Day 16 - 10-17-22 - Continued with jQuery 101 and learned about event listeners\
 Day 17 - 10-18-22 - Continued with jQuery and got through changing CSS stuff. Will do Ajax and project tomorrow\
 Day 18 - 10-19-22 - Finished jQuery lesson. Will start React 101 once I get back from out of town\
 Day 19 - 10-27-22 - Returned from out of town. Started and finished React 101\
+Day 20 - 10-31-22 - Started with React 201 and worked on functional components and routing\
