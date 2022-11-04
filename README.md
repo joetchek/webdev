@@ -23,3 +23,4 @@ Day 17 - 10-18-22 - Continued with jQuery and got through changing CSS stuff. Wi
 Day 18 - 10-19-22 - Finished jQuery lesson. Will start React 101 once I get back from out of town\
 Day 19 - 10-27-22 - Returned from out of town. Started and finished React 101\
 Day 20 - 10-31-22 - Started with React 201 and worked on functional components and routing\
+Day 21 - 11-3-22 - Continued with Reach 201 and worked on generating search results\
